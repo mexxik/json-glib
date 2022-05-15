@@ -1152,6 +1152,7 @@ json_object_iter_next (JsonObjectIter  *iter,
   JsonObjectIterReal *iter_real = (JsonObjectIterReal *) iter;
 
   g_return_val_if_fail (iter != NULL, FALSE);
+  g_return_val_if_fail (iter_real != NULL, FALSE);
   g_return_val_if_fail (iter_real->object != NULL, FALSE);
   g_return_val_if_fail (iter_real->object->ref_count > 0, FALSE);
 
